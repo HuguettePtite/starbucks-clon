@@ -47,8 +47,9 @@ Para ver el diseño y las funcionalidades responsivas (Layout Shifter):
 
 ## 📧 Contacto
 
-* **Tu Nombre:** [Huguette López]
+Huguette López
 * **LinkedIn:** [www.linkedin.com/in/huguettea134711a3]
 
 
 ---
+
