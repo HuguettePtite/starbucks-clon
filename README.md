@@ -27,7 +27,7 @@ Este proyecto destaca las siguientes técnicas profesionales:
 1.  **Layout Shifter (Menú Adaptativo):** El menú principal se transforma en un **icono de hamburguesa** en dispositivos móviles, demostrando el patrón de diseño *Layout Shifter*.
 2.  **Estrategia Desktop First:** El código CSS está optimizado utilizando `max-width` para transicionar de un diseño de escritorio complejo a una vista móvil limpia y apilada.
 
-![Clon-Starbucks](./assets/mobile.png.png)
+![Clon-Starbucks](./assets/mobile.png)
 
 3.  **Manejo de Layouts Complejos:** Implementación de `grid-template-columns: auto 1fr;` en el *header* para separar el logo y el menú de manera eficiente.
 4.  **Control de Flujo con `order`:** Uso de la propiedad `order` en las Media Queries para **invertir el orden visual** de los bloques de imagen y texto en móvil, garantizando una lectura lógica sin alterar el HTML.
@@ -49,5 +49,6 @@ Para ver el diseño y las funcionalidades responsivas (Layout Shifter):
 
 * **Tu Nombre:** [Huguette López]
 * **LinkedIn:** [www.linkedin.com/in/huguettea134711a3]
+
 
 ---
