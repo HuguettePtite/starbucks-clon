@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%; /*1 rem = 10px*/
+}
+:root {
+  --color-principal: #00766c;
+  --fuente-principal: "SoDo Sans SemiBold", Helvetica, sans-serif;
+  --tamanio-fuente-principal: 1.6rem;
+}
+body {
+  font-family: var(--fuente-principal);
+  font-size: var(--tamanio-fuente-principal);
+}
+h1 {
+  font-family: var(--fuente-principal);
+}
+.producto-descripcion {
+  font-size: var(--tamanio-fuente-principal);
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  /*   padding-left: 20px; */
+   /*  max-width: 1240px; era el problema*/
+}
+.region {
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    grid-gap: 40px;
+}
+.block-branding {
+  display: block;
+  margin-left: 60px;
+}
+.block-branding img {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    text-indent: -9999em;
+    background-size: cover;
+    display: block;
+}
+.main-menu {
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: row;
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.main-menu .block-main-menu a {
+    font-size: 1.4rem;
+    letter-spacing: .2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+.menu-left {
+  width: 100%;
+  margin-right: 140px;
+}
+.menu-right {
+  width: 900px;
+}
+.main-menu .main-login-register {
+    display: flex;
+    margin-left: 40px;
+    text-align: center;
+}
+.main-menu .menu-login-register li {
+    margin-right: 20px;
+}
+.main-menu .menu-login-register .store-locator {
+    border: 0;
+    font-weight: 600;
+    padding-left: 20px;
+    position: relative;
+}
+button {
+    display: inline-block;
+    background: none;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.signin {
+  background-color: #000;
+    color: #fff;
+}
+
+main {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 20px;
+}
+.row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 20px;
+  direction: rtl;
+}
+.block-banner {  
+  /*  background-color: #006242; */
+  display: flex;
+  align-items: center;
+}
+.one {
+   background-color: #006242;
+}
+.two {
+  background-color: #f7f0e4;
+  color: #32462f;
+}
+.two-h2, .two-p {
+  color: #32462f;
+}
+.three {
+  background-color: #32462f;
+}
+.four {
+  background-color: #00754a;
+}
+.five {
+  background-color: #32462f;
+}
+
+.block-text {
+  padding: 32px 16px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.block-image {
+  width: 100%;
+  height: 600px;
+}
+.block-image img {
+  width: 100%;
+}
+h2 {
+    font-size: 4rem;
+    line-height: 1.385;
+    font-weight: 600;
+    color: #fff;
+}
+p {
+  font-size: 2rem;
+    line-height: 1.75;
+    margin-bottom: 30px;
+    margin-top: 24px;
+    color: #fff;
+}
+.banner-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: start;
+  justify-items: center;
+}
+.left-grid {
+  margin-right: 10px;
+  background-color: #d1d1aa;
+}
+.left-grid, .block-text, .left-h2, .here {
+  color: #394433;
+}
+.left-grid img {
+  width: 100%;
+}
+.left-h2 {
+  font-size: 2rem;
+    line-height: 1.75;
+    margin-bottom: 30px;
+}
+.right-grid {
+  background-color: #32462f;
+}
+.right-grid, .block-text, .right-h2, .plus {
+  color: #ceceac;
+}
+.right-grid img {
+  width: 100%;
+}
+.right-h2 {
+    font-size: 2rem;
+    line-height: 1.75;
+    margin-bottom: 30px;
+}
+.left-button {
+  width: 50px;
+  height: 50px;
+}
+.here, .plus {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  margin-top: 30px;
+
+}
+footer {      
+    display: flex;
+    flex-direction: column;
+}
+.content-footer {
+    display: block;
+    align-content: center;
+}
+.about-us {
+   display: flex;
+    flex-direction: row;
+    align-items: normal;
+    width: 30%;
+    padding: 0;
+}
+.about-us div {
+    width: 100%;
+    padding: 50px 10px;
+    display: inline-grid;
+    justify-content: start;
+    align-items: start;
+    justify-items: left;
+}
+.about-us div h3 {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #212121;
+  padding: 20px 0;
+}
+.about-us div a {
+  text-decoration: none;
+  padding: 20px 0;
+  color: #777;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.social-media, .legal, .label-company {
+    display: flex;
+    padding: 20px 0;
+}
+.social-media div {
+    margin: 0 auto;
+}
+.social-media div a {
+  width: 25%;
+  height: 40px;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+}
+
+.legal ul {
+  margin: 0 auto;
+}
+.legal ul li a {
+   text-decoration: none;
+   color: #999;
+}
+.legal ul li a::after {
+  content: " | ";
+  display: block;
+  position: absolute;
+  right: -15px;
+  top: -2px;
+}
+
+.label-company div {
+  margin: 0 auto;
+  color: #999;
+}
+.label-company div span {
+  font-size: 1rem;
+  padding: 10px 50px;
+}
+
+
+@media (max-width: 767px) { /* MENOR DE 767PX - MOBILE */
+  /* HAMBURGUESA MENU */
+  .main-menu { 
+    display: none; 
+  } /* El menú grande está oculto por defecto */
+  .block-menu-pop { 
+    display: block; 
+  } /* El botón de hamburguesa se muestra por defecto */
+  .menu-toggle img {
+    width: 100%; 
+  }
+  .block-branding {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Apilar en una columna .row y .row1 */
+    .row, .row1 {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        row-gap: 20px; 
+        width: 100%;
+        height: auto; 
+    }
+
+    /* CORREGIR TAMAÑO DE IMAGEN Y TEXTO */
+    .block-image {
+        order: 1;
+        height: auto; 
+    }
+     .block-banner {
+        order: 2; 
+    }
+    .block-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* CORREGIR LA CUADRÍCULA FINAL (donde estaba .right-grid) */
+    .banner-grid {
+        grid-template-columns: 1fr; 
+        padding: 30px 10px;
+    }
+    
+    /* AJUSTAR TAMAÑOS DE FUENTE para móvil */
+    h2 {
+        font-size: 3rem; 
+    }
+    p {
+        font-size: 1.8rem;
+    }
+
+    /* FOOTER */
+    .about-us {
+      flex-direction: column;
+      width: 100%;
+    }
+    .about-us div {
+      padding: 10px;
+    }
+    .about-us div a {
+      display: none;
+    }
+
+
+    .social-media div {
+      display: flex;
+      align-items: center;
+    }
+    .social-media div a {
+      padding: 0;
+      margin: 10px;
+    }
+
+    .legal ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 10px 20px;
+      margin: 10px;
+    }
+
+    .label-company {
+      padding: 50px;
+    }
+}
+
+
+   
+
+
+
+@media (min-width: 768px) {/*  mayor de 768px - ESCRITORIO O TABLETA */
+  .container {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .region {
+      max-width: 720px;
+  }
+  .block-branding a img {
+      height: 50px;
+      width: 50px;
+    }
+  .main-menu {
+      justify-content: space-between;
+       
+    }
+  .main-menu .block-menu {
+        display: flex;
+        align-items: center;
+  }
+  .block-menu-pop {
+        display: none;
+  }
+}  
+
+@media (min-width: 576px) {
+    .region {
+        max-width: 540px;
+    }
+}
+
+
