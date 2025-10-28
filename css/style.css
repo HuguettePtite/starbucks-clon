@@ -35,12 +35,8 @@ header {
     width: 100%;
     height: 100%;
     margin-top: 20px;
-  /*   padding-left: 20px; */
-   /*  max-width: 1240px; era el problema*/
 }
 .region {
-    /* display: flex;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr;
@@ -326,6 +322,65 @@ footer {
   padding: 10px 50px;
 }
 
+/* JAVASCRIPT */
+.main-menu.is-open {
+    display: flex; 
+    position: absolute; 
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    height: calc(70vh - 60px); 
+    background-color: #fff;
+    flex-direction: column; 
+    padding: 0;
+    z-index: 10;
+    overflow-y: scroll; 
+    justify-content: flex-end;
+}
+/* Estilizar los Bloques Internos (Enlaces y Botones) */
+/* El bloque de enlaces de navegación (MENU, REWARDS) */
+.main-menu.is-open .block-menu {
+    flex-direction: column; 
+    border-bottom: 1px solid #ccc; 
+    padding: 20px 0;
+}
+.main-menu.is-open .block-menu-left,
+.main-menu.is-open .block-menu-right {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; 
+}
+/* Los bloques de botones (Localizar Tienda, Ingresar, Únete) */
+.main-menu.is-open .menu-right {
+    border-bottom: none;
+}
+/* Ajuste a los ítems de lista (li) */
+.main-menu.is-open ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 10px 0;
+}
+.main-menu.is-open li {
+    display: block; 
+    margin: 10px 20px;
+    width: fit-content;
+}
+/* AJUSTE de BOTONES Y BUSCADOR */
+.main-menu.is-open .main-login-register {
+    flex-direction: column; 
+}
+/* Dale un ancho de bloque a los botones para que se vean centrados y ordenados */
+.main-menu.is-open button,
+.main-menu.is-open input[type="text"] {
+    display: block;
+    margin: 10px 20px;
+    width: calc(100% - 40px); 
+    box-sizing: border-box; 
+    text-align: left; 
+}
 
 @media (max-width: 767px) { /* MENOR DE 767PX - MOBILE */
   /* HAMBURGUESA MENU */
@@ -411,12 +466,7 @@ footer {
     .label-company {
       padding: 50px;
     }
-}
-
-
-   
-
-
+  }
 
 @media (min-width: 768px) {/*  mayor de 768px - ESCRITORIO O TABLETA */
   .container {
